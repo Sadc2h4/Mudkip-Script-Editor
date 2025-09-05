@@ -1,0 +1,10 @@
+[Last_read_path]
+File_Full_Path1=-
+File_Full_Path2=-
+File_Full_Path3=-
+File_Full_Path4=-
+File_Full_Path5=-
+File_Full_Path6=-
+
+[Extract_tool_path]
+Stirling_Path=-

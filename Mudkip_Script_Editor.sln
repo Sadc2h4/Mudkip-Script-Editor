@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mudkip_Script_Editor", "Mudkip_Script_Editor\Mudkip_Script_Editor.csproj", "{2E171743-F484-4D7C-AAC9-1B19981DED01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E171743-F484-4D7C-AAC9-1B19981DED01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E171743-F484-4D7C-AAC9-1B19981DED01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E171743-F484-4D7C-AAC9-1B19981DED01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E171743-F484-4D7C-AAC9-1B19981DED01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88840039-47F0-4779-B851-4939C9B7CD17}
+	EndGlobalSection
+EndGlobal
