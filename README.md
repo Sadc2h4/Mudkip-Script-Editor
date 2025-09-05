@@ -1,8 +1,19 @@
 # Mudkip-Script-Editor
-![.NET](https://img.shields.io/badge/.NET-4.8-512BD4?logo=.net&logoColor=white)
+![.NET](https://img.shields.io/badge/.Net-6.0-512BD4?logo=.net&logoColor=white)
 ![platform](https://img.shields.io/badge/platform-Windows-informational)  
 
 <img src="/img/Screenshot_0.png" width="720" alt="メイン画面">
+
+
+<!-- 現行 .NET（.NET 6/8）版 WinForms -->
+![type](https://img.shields.io/badge/app-Windows%20Forms-blue?style=flat-square&logo=windows)
+![runtime](https://img.shields.io/badge/.NET-6.0%20(or%208.0)-512BD4?style=flat-square&logo=dotnet)
+![tfm](https://img.shields.io/badge/TFM-net6.0--windows-0B7285?style=flat-square)
+
+<!-- .NET Framework 版 WinForms -->
+![type](https://img.shields.io/badge/app-Windows%20Forms%20(.NET%20Framework)-236192?style=flat-square&logo=windows)
+![runtime](https://img.shields.io/badge/Framework-4.8.1-5C2D91?style=flat-square&logo=dotnet)
+![tfm](https://img.shields.io/badge/TFM-net48-0B7285?style=flat-square)
 
 
 ## ダウンロード
