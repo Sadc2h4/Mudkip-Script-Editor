@@ -1,20 +1,9 @@
 # Mudkip-Script-Editor
-![.NET](https://img.shields.io/badge/.Net-6.0-512BD4?logo=.net&logoColor=white)
-![platform](https://img.shields.io/badge/platform-Windows-informational)  
-
-<img src="/img/Screenshot_0.png" width="720" alt="メイン画面">
-
-
-<!-- 現行 .NET（.NET 6/8）版 WinForms -->
 ![type](https://img.shields.io/badge/app-Windows%20Forms-blue?style=flat-square&logo=windows)
 ![runtime](https://img.shields.io/badge/.NET-6.0%20(or%208.0)-512BD4?style=flat-square&logo=dotnet)
 ![tfm](https://img.shields.io/badge/TFM-net6.0--windows-0B7285?style=flat-square)
 
-<!-- .NET Framework 版 WinForms -->
-![type](https://img.shields.io/badge/app-Windows%20Forms%20(.NET%20Framework)-236192?style=flat-square&logo=windows)
-![runtime](https://img.shields.io/badge/Framework-4.8.1-5C2D91?style=flat-square&logo=dotnet)
-![tfm](https://img.shields.io/badge/TFM-net48-0B7285?style=flat-square)
-
+<img src="/img/Screenshot_0.png" width="720" alt="メイン画面">
 
 ## ダウンロード
 [Release](https://github.com/Sadc2h4/Mudkip-Script-Editor/releases/tag/v1.3a)  
@@ -25,7 +14,7 @@
 技作成の機能に特化した統合ツールとして作成しました．  
 
 ポケモンFR（BPRJ）の技編集ツールとしてはSkillEditor，poke-Syntheなどがありますが，本アプリケーションでは  
-技IDごとに情報を個別で取得して編集可能な他，複雑なスクリプトの効果内容やジャンプ先を可視化するなど，バイナリベースでより高度な編集が可能です．
+技IDごとに情報を個別で取得して編集可能な他，複雑なスクリプトの効果内容やジャンプ先を可視化するなど，バイナリベースでより高度な編集が可能です．  
 使いにくい部分もあると思いますが，少なくともバイナリエディタでの直書き込みと比較したら編集が楽な気がします()  
 
 このアプリケーションで実施可能な機能
@@ -39,27 +28,38 @@
 ・Stirlingへの外部参照補助
 
 ## 対応拡張子
-・.gbaファイル
-・アイコンbmp画像が入っているフォルダ
-
-※足跡確認機能を使用できるのはgbaファイルを読み込んだ際のみとなります
-
+・.binファイル  
+・.gbaファイル  
+・.txtファイル  
+> [!TIP]
+> binファイルを直接読み込むとEffect Info，Animation Infoタブのみ使用可能になります．
+> Romイメージに導入前の仮組スクリプトの内容を確認したい際に便利かもしれません
 
 ## 使い方
-### アイコンの読込について
+### iniファイルの選択について
 <img width="300" height="111" alt="Github_1" src="https://github.com/user-attachments/assets/ea6471fc-aa5e-4898-8e87-d346e763deb9" />
 
-アプリを起動したらメニューの[File(F)]から対象のフォルダかgbaファイルを選択するかドラッグアンドドロップで読み込んでください．  
-読込むアイコンの数が多いと多少時間が掛かる場合があります．  
-<br>
-<img width="600" height="156" alt="Github_2" src="https://github.com/user-attachments/assets/d137b79f-1d7f-430b-a5be-bdca2357a22e" />
-<br>
-読込完了後にフォーム上にアイコンが2フレームのアニメーションをしながら表示されます．  
-各アイコンはクリックすると使用されているパレット情報が画面上部に表示されます．  
+起動直後にiniファイルを選択する必要があります．  
+画面上部のini選択プルダウンから読み込みたいRomイメージの選んだうえで読込を実施してください．  
+Romイメージの読込は[File Open]ダイアログから行いますが，読み込みたいファイルを直接ドラッグ&ドロップでも可能です．  
+正常に読み込みが完了したらエディタに技内容などが表示されるようになります．  
 
-ダブルクリックすると対応したアイコンの編集エディタが表示されます．  
-読込時にフォルダとGBAファイル何方を使用したかでモードが自動で切り替わります． 
-GBAファイルを読み込んだ場合のみ足跡アイコンを選択するモードが追加されます．  
+選択するiniはSettingファイルの中から選ぶことが可能です．  
+iniを複製して編集したい場合はSettingファイル内の任意のiniフォルダをコピペし，内部のiniファイルを書き換えてください．  
+
+binファイルやdatファイルを直接ドラッグ&ドロップした場合，技テキストや情報などはスキップされて直に  
+Effect InfoとAnimation Infoに内容が反映されます．romに紐づく情報の連携や保存は出来ませんが  
+Info Openの機能はそのまま使用可能です．作成したスクリプトデータの内容確認に活用できます．  
+
+### searchボタンについて
+技名テキストボックスの右にある[search]ボタンを押すと，読み込んだROMイメージに登録されている全技データを一覧で表示することが出来ます．  
+SkillEditorと同じような感覚で技一覧を確認することが可能です．（読込データ量が多いため完了までに1~2分ほど時間を要する場合があります）  
+
+### .MSEファイルの出力について
+var1.3aから技の編集データをmseファイルとしてエクスポート，またはインポートして反映させることが可能となりました．  
+画面上部のインポート，エクスポート項目から選択することで実施が可能です．  
+技情報，技スクリプト，アニメーションスクリプト，技名，説明文が入出力の対象となります．技データの共有などに役立つ筈です．  
+
 <br><br>
 
 ### アイコンの編集エディタ基本機能について
