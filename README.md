@@ -6,9 +6,23 @@
 <img src="/img/Screenshot_0.png" width="720" alt="メイン画面">
 
 ## ダウンロード
-[Release](https://github.com/Sadc2h4/Mudkip-Script-Editor/releases/tag/v1.3a)  
-[Pokemon Hack uploader](https://ux.getuploader.com/freehack/download/187)  
+<a href="https://github.com/Sadc2h4/Mudkip-Script-Editor/releases/tag/v1.3a">
+  <img
+    src="https://raw.githubusercontent.com/Sadc2h4/brand-assets/main/button/Download_Button_1.png"
+    alt="Download .zip"
+    height="48"
+  />
+</a>
 <br>
+<a href="https://ux.getuploader.com/freehack/download/187">
+  <img
+    src="https://raw.githubusercontent.com/Sadc2h4/brand-assets/main/button/Download_Button_2.png"
+    alt="Download .zip"
+    height="48"
+  />
+</a>
+
+
 ## 概要
 本アプリケーションは技情報の編集以外にスクリプトの効果確認，技アニメーションの確認，表示パターンの設定，タイプのチャート編集など，  
 技作成の機能に特化した統合ツールとして作成しました．  
